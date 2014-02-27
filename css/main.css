@@ -131,8 +131,8 @@ header.top{
     position: fixed;
     background-color: #79db8f;
     padding:15px 0 0 0;
-    height: 360px;
-    box-shadow: 5px 5px 0px 1px #fff;
+    height: 300px;
+    box-shadow: 5px 5px 0px 1px #69A37C,  10px 10px 0px 1px #598969, 15px 15px 10px 5px  rgba(0,0,0,0.2);
     z-index: 12;
 }
 
@@ -218,6 +218,7 @@ header.top h1:after{
 header.top p{
     font-size: 13px;
     text-align: center;
+    color:#343838;
 }
 
 header figure{
@@ -293,7 +294,7 @@ header.aboutme{
     .aboutme .strips{
         position: absolute;
         top:0px;
-        left:-30px;
+        right:-30px;
         height: 100%;
     }
     .aboutme .strips span{
