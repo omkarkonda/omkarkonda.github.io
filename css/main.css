@@ -22,6 +22,13 @@
 
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'entypo-social';
+        src: url('../fonts/entypo-social.svg#entypo-social') format('svg');
+    }
+}
+
 
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
