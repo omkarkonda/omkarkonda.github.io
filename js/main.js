@@ -1,5 +1,5 @@
 $(  
-  $('button.close').on("click", function (){
+  $('a.close').on("click", function (){
       
           $(".overlay").removeClass("open");   
           $(".overlay").addClass("close");      
