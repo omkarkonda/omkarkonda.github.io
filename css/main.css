@@ -338,7 +338,6 @@ section.timeline ul.projectlist{
         right:-145px;       
         background-color: #333;
         box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2), 1px 1px 2px 0px rgba(255,255,255,0.1)
-    
     }
 
       
@@ -396,8 +395,9 @@ section.timeline ul.projectlist{
         position: relative;
     }
         ul.projectlist li .content h2{
-            margin-top:0;
+            margin:0;
             color:#79bd8f/*#beeb9f*/
+
         }
 
         ul.projectlist li .content .tags{
@@ -506,6 +506,7 @@ ul.skills{
 
     ul.skills li{
         margin-left: 10px;
+
     }
     
     ul.skills li label, ul.skills li span{
@@ -518,10 +519,408 @@ ul.skills{
     ul.skills li span{
         width:100%;
         background-color: #333;
-        height:1px;
+        cursor: pointer;
     }
-    
 
+    ul.skills li span i{
+        height: 1px;
+        background-color: #00A388;
+        display: block;
+        width:0%;
+    }
+
+    /* html */
+
+    ul.skills i.html{
+
+        -webkit-animation: html 2s 0.5s 1;
+        -moz-animation: html 2s 0.5s 1;
+        -o-animation: html 2s 0.5s 1;
+        -ms-animation: html 2s 0.5s 1;
+        animation: html 2s 0.5s 1;
+
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes html{
+        0%{width:0%; opacity: 0;}
+        100%{width:95%; opacity:1; }
+    }
+
+    @-moz-keyframes html{
+       0%{width:0%; opacity: 0;}
+        100%{width:95%; opacity:1; }
+    }
+
+    @-o-keyframes html{
+       0%{width:0%; opacity: 0;}
+        100%{width:95%; opacity:1; }
+    }
+
+    @-ms-keyframes html{
+       0%{width:0%; opacity: 0;}
+        100%{width:95%; opacity:1; }
+    }
+
+    @keyframes html{
+        0%{width:0%; opacity: 0;}
+        100%{width:95%; opacity:1; }
+    }
+
+    /* css */
+
+    ul.skills i.css{
+
+        -webkit-animation: css 2s 1s 1;
+        -moz-animation: css 2s 1s 1;
+        -o-animation: css 2s 1s 1;
+        -ms-animation: css 2s 1s 1;
+        animation: css 2s 1s 1;
+
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes css{
+        0%{width:0%; opacity: 0}
+        100%{width:85%; opacity: 1}
+    }
+
+    @-moz-keyframes css{
+        0%{width:0%; opacity: 0}
+        100%{width:85%; opacity: 1}
+    }
+
+    @-o-keyframes css{
+        0%{width:0%; opacity: 0}
+        100%{width:85%; opacity: 1}
+    }
+
+    @-ms-keyframes css{
+        0%{width:0%; opacity: 0}
+        100%{width:85%; opacity: 1}
+    }
+
+    @keyframes css{
+        0%{width:0%; opacity: 0}
+        100%{width:85%; opacity: 1}
+    }
+
+
+       /* javascript */
+
+    ul.skills i.js{
+
+        -webkit-animation: js 2s 1s 1;
+        -moz-animation: js 2s 1s 1;
+        -o-animation: js 2s 1s 1;
+        -ms-animation: js 2s 1s 1;
+        animation: js 2s 1s 1;
+
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes js{
+        0%{width:0%; opacity: 0}
+        100%{width:50%; opacity: 1}
+    }
+
+    @-moz-keyframes js{
+        0%{width:0%; opacity: 0}
+        100%{width:50%; opacity: 1}
+    }
+
+    @-o-keyframes js{
+        0%{width:0%; opacity: 0}
+        100%{width:50%; opacity: 1}
+    }
+
+    @-ms-keyframes js{
+        0%{width:0%; opacity: 0}
+        100%{width:50%; opacity: 1}
+    }
+
+    @keyframes js{
+        0%{width:0%; opacity: 0}
+        100%{width:50%; opacity: 1}
+    }
+
+
+    /* jQuery */
+
+    ul.skills i.jq{
+
+        -webkit-animation: jq 2s 1.5s 1;
+        -moz-animation: jq 2s 1.5s 1;
+        -o-animation: jq 2s 1.5s 1;
+        -ms-animation: jq 2s 1.5s 1;
+        animation: jq 2s 1.5s 1;
+
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes jq{
+        0%{width:0%; opacity: 0}
+        100%{width:60%; opacity: 1}
+    }
+
+    @-moz-keyframes jq{
+          0%{width:0%; opacity: 0}
+        100%{width:60%; opacity: 1}
+    }
+
+    @-o-keyframes jq{
+          0%{width:0%; opacity: 0}
+        100%{width:60%; opacity: 1}
+    }
+
+    @-ms-keyframes jq{
+          0%{width:0%; opacity: 0}
+        100%{width:60%; opacity: 1}
+    }
+
+    @keyframes jq{
+          0%{width:0%; opacity: 0}
+        100%{width:60%; opacity: 1}
+    }
+
+    /* Photoshop */
+
+    ul.skills i.ps{
+
+        -webkit-animation: ps 2s 2s 1;
+        -moz-animation: ps 2s 2s 1;
+        -o-animation: ps 2s 2s 1;
+        -ms-animation: ps 2s 2s 1;
+        animation: ps 2s 2s 1;
+           animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes ps{
+        0%{width:0%; opacity: 0}
+        100%{width:90%; opacity: 1}
+    }
+
+    @-moz-keyframes ps{
+        0%{width:0%; opacity: 0}
+        100%{width:90%; opacity: 1}
+    }
+
+    @-o-keyframes ps{
+        0%{width:0%; opacity: 0;}
+        100%{width:90%; opacity: 1}
+    }
+
+    @-ms-keyframes ps{
+        0%{width:0%; opacity: 0; }
+        100%{width:90%; opacity:1;}
+    }
+
+    @keyframes ps{
+        0%{width:0%; opacity: 0;}
+        100%{width:90%; opacity: 1}
+    }
+
+    /* illustrator */
+
+    ul.skills i.il{
+
+        -webkit-animation: il 2s 2.5s 1;
+        -moz-animation: il 2s 2.5s 1;
+        -o-animation: il 2s 2.5s 1;
+        -ms-animation: il 2s 2.5s 1;
+        animation: il 2s 2.5s 1;
+
+         animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes il{
+        0%{width:0%; opacity: 0}
+        100%{width:55%; opacity: 1}
+    }
+
+    @-moz-keyframes il{
+        0%{width:0%; opacity: 0}
+        100%{width:55%; opacity: 1}
+    }
+
+    @-o-keyframes il{
+        0%{width:0%; opacity: 0}
+        100%{width:55%; opacity: 1}
+    }
+
+    @-ms-keyframes il{
+        0%{width:0%; opacity: 0}
+        100%{width:55%; opacity: 1}
+    }
+
+    @keyframes il{
+        0%{width:0%; opacity: 0}
+        100%{width:55%; opacity: 1}
+    }
+
+    /* Wireframing */
+
+    ul.skills i.wire{
+
+        -webkit-animation: wire 2s 3s 1;
+        -moz-animation: wire 2s 3s 1;
+        -o-animation: wire 2s 3s 1;
+        -ms-animation: wire 2s 3s 1;
+        animation: wire 2s 3s 1;
+
+         animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes wire{
+        0%{width:0%; opacity: 0}
+        100%{width:75%; opacity: 1}
+    }
+
+    @-moz-keyframes wire{
+        0%{width:0%; opacity: 0}
+        100%{width:75%; opacity: 1}
+    }
+
+    @-o-keyframes wire{
+        0%{width:0%; opacity: 0}
+        100%{width:75%; opacity: 1}
+    }
+
+    @-ms-keyframes wire{
+        0%{width:0%; opacity: 0}
+        100%{width:75%; opacity: 1}
+    }
+
+    @keyframes wire{
+        0%{width:0%; opacity: 0}
+        100%{width:75%; opacity: 1}
+    }
+
+     /* UX */
+
+    ul.skills i.ux{
+
+        -webkit-animation: ux 2s 3.5s 1;
+        -moz-animation: ux 2s 3.5s 1;
+        -o-animation: ux 2s 3.5s 1;
+        -ms-animation: ux 2s 3.5s 1;
+        animation: ux 2s 3.5s 1;
+
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes ux{
+        0%{width:0%; opacity: 0}
+        100%{width:70%; opacity: 1}
+    }
+
+    @-moz-keyframes ux{
+        0%{width:0%; opacity: 0}
+        100%{width:70%; opacity: 1}
+    }
+
+    @-o-keyframes ux{
+        0%{width:0%; opacity: 0}
+        100%{width:70%; opacity: 1}
+    }
+
+    @-ms-keyframes ux{
+        0%{width:0%; opacity: 0}
+        100%{width:70%; opacity: 1}
+    }
+
+    @keyframes ux{
+        0%{width:0%; opacity: 0}
+        100%{width:70%; opacity: 1}
+    }
+
+
+     /* wordpress */
+
+    ul.skills i.wp{
+
+        -webkit-animation: wp 2s 4s 1;
+        -moz-animation: wp 2s 4s 1;
+        -o-animation: wp 2s 4s 1;
+        -ms-animation: wp 2s 4s 1;
+        animation: wp 2s 4s 1;
+
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+    }
+
+    @-webkit-keyframes wp{
+        0%{width:0%; opacity: 0 }
+        100%{width:68%; opacity: 1}
+    }
+
+    @-moz-keyframes wp{
+        0%{width:0%; opacity: 0 }
+        100%{width:68%; opacity: 1}
+    }
+
+    @-o-keyframes wp{
+        0%{width:0%; opacity: 0 }
+        100%{width:68%; opacity: 1}
+    }
+
+    @-ms-keyframes wp{
+        0%{width:0%; opacity: 0 }
+        100%{width:68%; opacity: 1}
+    }
+
+    @keyframes wp{
+        0%{width:0%; opacity: 0 }
+        100%{width:68%; opacity: 1}
+    }
+
+     /* RWD */
+
+    ul.skills i.rwd{
+
+        -webkit-animation: rwd 2s 4.5s 1;
+        -moz-animation: rwd 2s 4.5s 1;
+        -o-animation: rwd 2s 4.5s 1;
+        -ms-animation: rwd 2s 4.5s 1;
+        animation: rwd 2s 4.5s 1;
+
+         animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes rwd{
+        0%{width:0%; opacity: 0}
+        100%{width:82%; opacity: 1}
+    }
+
+    @-moz-keyframes rwd{
+        0%{width:0%; opacity: 0}
+        100%{width:82%; opacity: 1}
+    }
+
+    @-o-keyframes rwd{
+        0%{width:0%; opacity: 0}
+        100%{width:82%; opacity: 1}
+    }
+
+    @-ms-keyframes rwd{
+        0%{width:0%; opacity: 0}
+        100%{width:82%; opacity: 1}
+    }
+
+    @keyframes rwd{
+        0%{width:0%; opacity: 0}
+        100%{width:82%; opacity: 1}
+    }
 
 }/* MQ end  */
 
@@ -705,14 +1104,6 @@ nav ul li i{
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'entypo';
-    src: url('../font/entypo.svg?95868874#entypo') format('svg');
-  }
-}
-*/
 
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "entypo";
