@@ -2,7 +2,8 @@ $(
   $('a.close').on("click", function (){
       
           $(".overlay").removeClass("open");   
-          $(".overlay").addClass("close");      
+          $(".overlay").addClass("close");
+         $("body").removeClass("overflow");        
       
   }),
     
@@ -10,6 +11,7 @@ $(
       if($(".overlay").hasClass("close")){        
           $(".overlay").removeClass("close");   
           $(".overlay").addClass("open");      
+          $("body").addClass("overflow");
         }
    }),
 
@@ -18,7 +20,15 @@ $(
 
         /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-
+        console.log(scrollY);
+        
+        if(scrollY>40){
+            $('.aboutme').addClass('sticky');
+        }else{
+            $('.aboutme').removeClass('sticky');
+        }
+        
+        
         /* Check the location of each desired element */
         $('.hideme').each( function(i){
 
