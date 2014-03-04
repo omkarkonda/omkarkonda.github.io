@@ -30,6 +30,11 @@ body {
     color:#333;
 }
 
+*{
+    -webkit-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -65,7 +70,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@media only screen and (min-width:1000px) {
 
 
 section.container{
@@ -103,9 +107,7 @@ section.timeline{
 }
 
 /******************************************************************
-
     Header top styles
-
 ******************************************************************/
 
 
@@ -182,8 +184,11 @@ header.top h1{
     text-transform: uppercase;
     border-top:1px solid #ccc;
     letter-spacing: 1px;
+   
+}
 
-    
+header.top h1 small{
+    display: none;
 }
 
 header.top h1:before{
@@ -800,10 +805,6 @@ ul.skills{
         }
     
 
-}/* MQ end  */
-
-
-
 /******************************************************************
 
     Overlay styles
@@ -901,55 +902,9 @@ ul.skills{
     font-weight: 100;
 }
 
-.contact a span{
-   
+.contact a span{   
     color:gray
 }
-
-
-
-/******************************************************************
-
-    Main nav
-
-******************************************************************/
-
-nav ul{    
-    width:200px;
-    position: absolute;
-    left:50%;
-    top:50%;
-    margin-top:-200px;
-    margin-left:-150px;
-    text-align: center;
-}
-
-
-nav ul li{
-    font-size: 50px;    
-    padding:10px 20px;
-    width:300px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    1background-color: #fff
-}
-
-nav ul li i{
-    font-family: entypo;
-    font-size: 2.2em;
-    font-style: normal;
-    line-height: 0.7;
-    margin-right:10px;
-    width:12px;
-    display: inline-block;   
-    text-align: center;
-    display: none;
-}
-
-
-
-
 
 
 
@@ -957,9 +912,159 @@ nav ul li i{
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (max-width:480px) {
+    
+    header.top, section.timeline, aside.sidebar{
+        width: 100%;
+        position: static;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    
+    section.timeline{
+        margin-left:0;
+    }
+    
+    header.top p{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .navtg{
+        margin-bottom:25px;
+    }
+    
+    header.aboutme{
+        font-size: 20px;
+        text-align: center
+    }
+     ul.projectlist li{
+         width:90%
+     }
+    ul.projectlist li .date{
+        position: static;
+        width:auto;
+        display: block;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    
+    ul.projectlist li .date span, ul.projectlist li .date em{
+        display:inline;
+        padding:0px;
+        text-transform: uppercase;
+        font-size: 12px;    
+    }
+    
+    ul.projectlist li div.icon{
+        top:72px;
+    }
+       
 }
+
+
+
+@media only screen and (min-width: 480px) and (max-width:800px){
+
+    header.top{
+        width:100%;
+        float:none;
+        display: block; 
+        position: relative;
+        z-index: 99;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-align: left;
+        padding:20px;
+        
+    }
+    aside.sidebar{
+        position: static;
+        width:100%;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+        padding: 10px;
+    }
+    
+    section.timeline{
+        margin:0;
+        width:100%;
+           padding: 0 20px;
+    }
+    
+    
+    header.top hr{
+        display: none;
+    }
+    
+    header figure{
+        margin: 0;
+        text-align: left;
+        float: left
+    }
+    
+    section.branding-area{
+        margin:0%
+    }
+        
+    .branding-area figure img{
+       width:50px;
+       border: 1px;
+        
+    }
+    
+     header.top h1{
+         background: none;
+         border:none;
+         font-size: 25px;
+         text-align: left;
+         width:auto;
+         float: left;
+         margin-top:-55px;
+         margin-left: 60px;
+         color:#343838;
+     }
+    
+     header.top h1 small{
+         display: block;
+         font-size: 12px;
+         font-weight: normal;
+         text-transform: capitalize;
+         letter-spacing: 0px
+     }
+      
+    header.top h1:after, header.top h1:before{
+        border:none;
+    }
+    
+    header.top p,header.top .social{
+        display: none
+    }
+    
+    header.top .navtg{
+       text-align: left;
+       margin-left:60px;
+        margin-top: 5px;
+       float: none;
+       display: block;
+    }
+    
+    div.navtg a.contact{
+        font-size: 12px;
+        padding:3px 10px;
+            
+    }
+     
+    aside.sidebar .box{
+        display: inline-block;
+        margin: 10px;
+    }
+     
+}
+
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
