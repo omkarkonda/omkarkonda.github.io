@@ -467,8 +467,8 @@ aside.sidebar p{
     line-height: 1.5
 }
     
-.testimonials{
-    
+.sidebar h3{
+    color:#f4f4f4;
 }    
 
     .testimonials h2{
@@ -779,7 +779,7 @@ ul.skills{
         0%{width:0%; opacity: 0}
         100%{width:82%; opacity: 1}
     }
-    
+ 
     
     aside.sidebar .box{
         padding: 10px;
@@ -959,11 +959,8 @@ ul.skills{
     
     ul.projectlist li div.icon{
         top:72px;
-    }
-       
+    }   
 }
-
-
 
 @media only screen and (min-width: 480px) and (max-width:800px){
 
@@ -1063,7 +1060,53 @@ ul.skills{
      
 }
 
+@media only screen and (max-width:640px){
+    
+.overlay.open .close{
+    right:50%;
+    margin-right:-30px;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #343838;
+    padding: 5px;
+}
+    
+   .overlay .contact{
+       margin-top:0px;
+       top:30%;
+    }
+    
+    .overlay .contact a{
+        font-size: 30px;
+    }
+    
+    @-webkit-keyframes contact{
+        0%{
+            opacity: 0;
+    
+        }
 
+        100%{
+            opacity: 1;
+            
+        }
+    
+    }
+
+    @keyframes contact{
+          0%{
+                opacity: 0;
+    
+            }
+
+            100%{
+                opacity: 1;
+
+            }
+    }
+}
 
 
 @media print,
