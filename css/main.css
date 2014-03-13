@@ -15,17 +15,17 @@ body {
     font-size: 1em;
     line-height: 1.4;
     font-family: "Roboto", "Lucida Grande", "Tahoma", "Verdana"; 
-
+    background-color:#79DB8F;
 }
 
 ::-moz-selection {
-    background: yellow;
+    background: lightgray;
     text-shadow: none;
     color:#333;
 }
 
 ::selection {
-    background: yellow;
+    background: lightgray;
     text-shadow: none;
     color:#333;
 }
@@ -69,14 +69,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-section.container{
-      background-color:#343838 
+.portfolio{
+    display: none
 }
 
-header.top, section.timeline, aside.sidebar{
+
+section.content{
+ background: url(/img/broken_noise.png) repeat left top;       
+ padding: 1px 0;    
+}
+
+
+
+section.timeline, aside.sidebar{
     height:100%; 
     padding:15px; 
     vertical-align: top;
@@ -92,71 +97,65 @@ aside.sidebar{
     width:20.8333%; 
     position: fixed;
     right:0;   
-    background: #404545;
-    -webkit-box-shadow:-5px 5px  0 1px #303333, -10px 10px 0 1px #1f2222;
-            box-shadow:-5px 5px  0 1px #303333, -10px 10px 0 1px #1f2222;
+    background: #141414;
+    
+    -webkit-box-shadow:-3px 3px 0 10px #121212;
+            box-shadow:-3px 0px 5px 10px rgba(0,0,0,0.5);
+    
+    -ms-transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+            
 }
 
 section.timeline{
-    margin-left:20.8333%;
-    width:58.3333%;    
-    background: url(../img/diagmonds.png) fixed;
-
-    padding: 0 30px;
-
+   
+    width:79.1667%;    
+    padding: 0;
 }
+
+.aboutme, .portfolio, .timeline_wrapper, .testimonials{
+ max-width: 800px; 
+ margin: 0 auto;
+}
+
 
 /******************************************************************
     Header top styles
 ******************************************************************/
 
 
-header.top{   
-    width:20.8333%;      
-    color:#fff;    
-    position: fixed;
-    background-color: #79db8f;
-    padding:15px 0 0 0;
-    -webkit-box-shadow: 5px 5px 0px 1px #69A37C,  10px 10px 0px 1px #598969, 15px 15px 10px 5px  rgba(0,0,0,0.1);
-            box-shadow: 5px 5px 0px 1px #69A37C,  10px 10px 0px 1px #598969, 15px 15px 10px 5px  rgba(0,0,0,0.1);
-    z-index: 12; 
-  
-}
 
-    header.top hr{
-        border-color:#69A37C;
-    }
 
+   
 div.navtg{
     text-align: center;
-
-    margin-top: 20px;
+    margin-top: 50px;
+    
 }    
     
 div.navtg a{
     text-align: center;
     display: inline-block;
-    padding:10px 25px;
-    border:1px solid rgba(255,255,255,0.5);
-    border-radius: 3px;
+    padding:10px 30px;    
+    background-color: #5990D9;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
     text-transform: uppercase;
     color:#fff;
     letter-spacing: 2px;
-    font-size: 14px;
-    -webkit-transition: all 0.2s ease-in; 
+    font-size: 16px;
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.5);
+            box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+    -webkit-transition: all 0.5s ease-in; 
             transition: all 0.5s ease-in;
 }
 
-header.top:hover div.navtg a{
-    background-color: #343838;
-    color:#fff;
-    border-color:transparent;
-}
+
 
     div.navtg a:hover{
-        background-color: #343838;
+        background-color: #2D70C8;
     }
     
     div.navtg:hover span{
@@ -166,80 +165,6 @@ header.top:hover div.navtg a{
     
 section.branding-area{
     margin:10px 7.5%;
-}
-
-
-header.top h1{
-    font-size:14px;
-    font-weight: 800;
-    text-align: center;
-    color: yellow;
-    background-color: #343838;
-    display: block;    
-    padding:2px 3px;
-    position: relative;
-    z-index: 11;
-    width:130px;
-    margin: -20px auto 0 auto;
-    text-transform: uppercase;
-    border-top:1px solid #ccc;
-    letter-spacing: 1px;
-   
-}
-
-header.top h1 small{
-    display: none;
-}
-
-header.top h1:before{
-    content:"";
-    width:0px;
-    height:0px;    
-    display: inline-block;
-    margin-bottom:-4px;
-    position: absolute;
-    top:10px;
-    left:-15px;
-    border:10px solid;
-    border-color: #343838 #343838 #343838 transparent;
-    z-index: -1;
-}
-
-header.top h1:after{
-    content:"";
-    width:0px;
-    height:0px;    
-    display: inline-block;
-    margin-bottom:-4px;
-    position: absolute;
-    top:10px;
-    right:-15px;
-    border:10px solid red;
-    border-color: #343838 transparent #343838 #343838 ;
-    z-index: 1;
-}
-
-
-header.top p{
-    font-size:24px;
-    text-align: center;
-    color:#343838;
-    font-weight: bold;
-    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-    
-    
-}
-
-header figure{
-    margin:0 auto;
-    width:100%;
-    text-align: center
-}
-header figure img{
-    border-radius:50%;    
-    width:120px; 
-    margin:0 auto;
-    border:5px solid #000;
 }
 
 .social{
@@ -267,6 +192,56 @@ header figure img{
 
 ******************************************************************/
 
+.hero{
+    height:500px;
+    width:100%;
+    background:url(/img/hills.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 70px 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+}
+
+.hero > h1{
+    color:#79db8f;
+    padding:0 30px;
+    font-size: 42px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 5px #101010;
+    
+}
+
+.hero > h1 + small{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color:#fff;
+    display: block;
+     text-shadow: 1px 2px 1px #101010;
+    
+}
+
+
+.hero figure{
+    margin:0 auto;
+    width:100%;
+    text-align: center
+}
+
+.hero figure img{
+    border-radius:50%;    
+    width:120px; 
+    margin:0 auto;
+    -webkit-box-shadow: 0 0 0 5px #000;
+            box-shadow: 0px 0 0 5px rgba(255,255,255,0.5), 0 5px 2px 1px #000;
+    
+}
+
+
 section.timeline{
     position: relative
 }
@@ -276,17 +251,23 @@ section.timeline hr{
 }
 header.aboutme{
     color:#ccc;
-    font-size: 24px;
+
     font-weight: 300;
-    position: relative
+    position: relative;
+    padding: 0 30px;
 
 } 
-    
+
+.aboutme p{
+    font-size: 30px;
+    text-shadow: 1px 2px 1px #101010;
+    color:#999;
+}
       
-    .aboutme p span{
-        font-weight: 900;
-        color:#fff;
-    }
+.aboutme p span{
+    font-weight: 900;
+    color:#fff;
+}
     
     .aboutme p em{
         font-style: normal;
@@ -294,8 +275,16 @@ header.aboutme{
         border-bottom:1px dotted #666;
     }
     
- 
- 
+
+.portfolio h2{
+    color:#5990D9;
+    padding:0;
+    margin:0;
+}
+
+.timeline_wrapper, .portfolio, .testimonials{
+    padding: 0 30px;
+}
 
 .timeline_wrapper > h2{
     color:#79bd8f;
@@ -490,8 +479,7 @@ aside.sidebar p{
     font-size: 13px;
     font-weight: 100;
     
-    
-    margin: 50px 30px 50px 40px;
+    margin: 20px 30px 20px 20px;
     padding:10px 15px;
     border-left:5px solid #00A388;
     background-color:rgba(125,125,125,0.3);
@@ -546,7 +534,7 @@ ul.skills{
 
     ul.skills li span i{
         height: 1px;
-        background-color: yellow;
+        background-color: #FF6138;
         display: block;
         width:0%;
         
@@ -822,7 +810,7 @@ ul.skills{
     left:0;
     right:0;
     bottom: 0;
-    background: rgba(121,189,143,0.97);   
+    background: #5990D9;   
     z-index: 99;
     opacity: 0;
     visibility: hidden;
@@ -918,7 +906,7 @@ ul.skills{
 
 @media only screen and (max-width:480px) {
     
-    header.top, section.timeline, aside.sidebar{
+    section.timeline, aside.sidebar{
         width: 100%;
         position: static;
         -webkit-box-shadow: none;
@@ -929,10 +917,7 @@ ul.skills{
         margin-left:0;
     }
     
-    header.top p{
-        font-size: 20px;
-        font-weight: 900;
-    }
+    
     
     .navtg{
         margin-bottom:25px;
@@ -963,100 +948,89 @@ ul.skills{
     
     ul.projectlist li div.icon{
         top:72px;
-    }   
+    }
+    
+    aside.sidebar{
+        -webkit-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+                transform: rotateZ(0deg)
+    }
+    
+  .hero{
+    height: 380px;
+    padding: 35px 0px;
+    }
+    .hero > h1{
+    font-size:28px;}    
+    
+    .hero > h1 span{
+        display: block}
+    .hero > h1 + small{
+        display: none
+    }
+    div.navtg a{
+        font-size: 14px;
+    }
+    
+    .aboutme p{
+    font-size: 20px;}
 }
 
 @media only screen and (min-width: 480px) and (max-width:800px){
 
-    header.top{
-        width:100%;
-        float:none;
-        display: block; 
-        position: relative;
-        z-index: 99;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        text-align: left;
-        padding:20px;
-        
-    }
+   
     aside.sidebar{
         position: static;
         width:100%;
-            -webkit-box-shadow: none;
-                    box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
         padding: 10px;
+        -webkit-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
     }
     
     section.timeline{
         margin:0;
         width:100%;
-           padding: 0 20px;
+        padding: 0;
     }
-    
-    
-    header.top hr{
-        display: none;
+    .aboutme p{
+        font-size:22px;
     }
-    
-    header figure{
-        margin: 0;
-        text-align: left;
-        float: left
-    }
+      
     
     section.branding-area{
         margin:0%
     }
         
     .branding-area figure img{
-       width:50px;
-       border: 1px;
-        
+       width:100px;
+       margin-bottom: 15px;     
+    }
+    .hero{
+        height: 400px;
+    }
+    .hero > h1{
+        font-size: 35px;
+        line-height: 40px;
     }
     
-     header.top h1{
-         background: none;
-         border:none;
-         font-size: 25px;
-         text-align: left;
-         width:auto;
-         float: left;
-         margin-top:-55px;
-         margin-left: 60px;
-         color:#343838;
-     }
-    
-     header.top h1 small{
-         display: block;
-         font-size: 12px;
-         font-weight: normal;
-         text-transform: capitalize;
-         letter-spacing: 0px
-     }
-      
-    header.top h1:after, header.top h1:before{
-        border:none;
+    .hero > h1 + small{
+        display: block;
     }
     
-    header.top p,header.top .social{
-        display: none
+    div.navtg{
+        margin-top:15px;
     }
+  
     
-    header.top .navtg{
-       text-align: left;
-       margin-left:60px;
-        margin-top: 5px;
-       float: none;
-       display: block;
-    }
     
     div.navtg a.contact{
-        font-size: 12px;
-        padding:3px 10px;
-            
+        font-size: 14px;       
     }
-     
+    
+   
     aside.sidebar .box{
         display: inline-block;
         margin: 10px;
@@ -1109,6 +1083,10 @@ ul.skills{
                 opacity: 1;
 
             }
+    }
+    
+    .hero{
+        height:400px;
     }
 }
 

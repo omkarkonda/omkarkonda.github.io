@@ -7,7 +7,7 @@ $(
       
   }),
     
-  $('div.navtg').on("click", function (){
+  $('div.navtg a').on("click", function (){
       if($(".overlay").hasClass("close")){        
           $(".overlay").removeClass("close");   
           $(".overlay").addClass("open");      
