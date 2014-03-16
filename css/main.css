@@ -516,13 +516,31 @@ aside.sidebar p{
     text-indent: 15px;
     position: relative;
     border-radius:0 5px 5px 0;
+    width:38%;
+    float: left;
     -webkit-transition: all 0.5s ease-in;
+            -webkit-transition: all 0.5s ease-in;
             transition: all 0.5s ease-in;
 }
-    .testimonials blockquote:hover{
+    
+.testimonials blockquote:hover{
         -webkit-box-shadow:4px 0 3px 2px #333;
                 box-shadow:0px 0 3px 2px #333;
     }
+
+    blockquote .connection{
+        display: block;
+        padding-top: 15px;
+    }
+        blockquote .connection span{
+            display: block;
+            color:#fff;
+            text-indent: 0
+        }
+        blockquote .connection span a{
+            text-decoration: none;
+            color:#FF6138;    
+        }
 
 .testimonials blockquote:before{
     content: ' " ';
@@ -1004,6 +1022,10 @@ ul.skills{
     
     .aboutme p{
     font-size: 20px;}
+    
+    .testimonials blockquote{
+        width: auto;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width:800px){
@@ -1065,7 +1087,9 @@ ul.skills{
         display: inline-block;
         margin: 10px;
     }
-     
+     .testimonials blockquote{
+        width: auto;
+    }
 }
 
 @media only screen and (max-width:640px){
