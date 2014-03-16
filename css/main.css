@@ -31,8 +31,8 @@ body {
 }
 
 *{
-    -webkit-transition: all 0.5s ease-in;
-            transition: all 0.5s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
 }
 
 hr {
@@ -446,6 +446,36 @@ ul.projectlist{
     }
     
 
+/******************************************************************
+
+    Gallery  Grid
+
+*******************************************************************/
+
+.gallery {
+  
+}
+/* clearfix */
+.gallery:before,
+.gallery:after {
+    content: "";
+    display: table;
+}
+.gallery:after {
+    clear: both;
+}
+
+
+.item{
+	float:left;
+	position:relative;
+	overflow:hidden;
+    
+}
+.item img{
+	position:absolute;
+	outline:none;
+}
 
 
 /******************************************************************
