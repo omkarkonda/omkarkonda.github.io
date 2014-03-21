@@ -692,6 +692,12 @@ ul.projectlist{
     font-size: 14px;
 }
 
+.pbox ul li span.free{
+    color:#FF6138;    
+    border-radius: 3px;
+        
+}
+
 .pbox.medium{
     margin-top: 65px;
 }
@@ -699,6 +705,14 @@ ul.projectlist{
 .pbox.mini{
     margin-top: 126px;
 }
+
+.pbox .fblike{
+    text-align: center;
+    display: block;
+    padding:15px 0;
+    margin-left: 75px;
+}
+
 
 .packages, .contactme{
     padding: 60px 30px;
